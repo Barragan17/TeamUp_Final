@@ -1,0 +1,125 @@
+name: teamup_final
+description: A new Flutter application.
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_screenutil: ^3.1.0
+  firebase_auth: ^0.15.2
+  google_sign_in: ^4.0.4
+  cloud_firestore: ^0.12.11
+
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.0
+  flutter_tindercard: ^0.1.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/images/
+    # - assets/images/1ec2473f172c35d3c0525b1a1c392662e9f5500d.png
+    # - assets/images/3d8138bf44470b9f55093d17e582a7552277e787.png
+    # - assets/images/5e2c3a3965889decafab3015bdd3ab93b92dff27.png
+    # - assets/images/5f65eefe9cfc8b41d144c77c0772a0026e2e4b02.png
+    # - assets/images/6d206e7f774b77a8b2be23a11bb4856ef7eb2e2d.png
+    # - assets/images/7d9d314b01f4a7bbe06053c21e1ad29e42771f05.png
+    # - assets/images/34ac056de00d1c12d2083b0702a12359c5d7983f.png
+    # - assets/images/274c74673e000d92f59f792093d6bac32a5aa773.png
+    # - assets/images/591e2a4befae056e0ae0bce79efeb9d9a394e82e.png
+    # - assets/images/0932a72217027e425690bef7f4b0618f8dada6ad.png
+    # - assets/images/6757cb8e3f5e7ecc25958eeb87560ff2a76d88c9.png
+    # - assets/images/17809e7da7ea2b2e8a6e40aa98fd37fd28d08019.png
+    # - assets/images/74481bf67abe5e087662519073d98ecacd70bcef.png
+    # - assets/images/376652e2f79dc5d553237d9286fc58932b390919.png
+    # - assets/images/936325e06651a476db47d59d008b7faa1ef4c487.png
+    # - assets/images/ad7e551b033b6da8f428df5b159651c7a8506006.png
+    # - assets/images/b58f153c0198a8cacb395110ef9b0c82ebab6998.png
+    # - assets/images/bb56e056d5471c16b9e96cbd4bcc9b0d241b713c.png
+    # - assets/images/c0b9e8e117c554680d5da797a43e66718475e9f6.png
+    # - assets/images/c0044085c3db08f1794d900e898af79b956b7a9e.png
+    # - assets/images/cd6eb86897324fdd23eb4212f67bab88fe31e015.png
+    # - assets/images/cd13323f88e37baa0ab283dd99c9610a7442cc09.png
+    # - assets/images/d3fc90112c3245e080d03f089bb30fa9d6cf59a3.png
+    # - assets/images/d9c9f60fc118618150665611f01ca881aead0b9a.png
+    # - assets/images/d250177a4d8199a87156aeba94eef8f828993e73.png
+    # - assets/images/da76dca6bc6ce46b12505187e111c76d49aff771.png
+    # - assets/images/dc6d4177d8e7209dcdf5023d0f42d9aa87b68db2.png
+    # - assets/images/e398ebc34b89141ffe8285f31cbb3c760d5af35c.png
+    # - assets/images/fd75c898997d51e31b8ae36ce30b413b2264bbab.png
+    # - assets/images/index.png
+    # - assets/images/google_logo.png
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware.
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  fonts:
+    - family: OpenSans
+      fonts:
+        - asset: fonts/OpenSans-Regular.ttf
+        - asset: fonts/OpenSans-Bold.ttf
+          weight: 700
+    - family: Quicksand
+      fonts:
+        - asset: fonts/Quicksand-Regular.ttf
+        - asset: fonts/Quicksand-Bold.ttf
+          weight: 700
+    - family: Nunito
+      fonts:
+        - asset: fonts/Nunito-regular.ttf
+        - asset: fonts/Nunito-800.ttf
+          weight: 800
+    - family: Montserrat
+      fonts:
+        - asset: fonts/Montserrat-regular.ttf
+        - asset: fonts/Montserrat-700.ttf
+          weight: 700
+    - family: Inter
+      fonts:
+        - asset: fonts/Inter-500.ttf
+          weight: 500
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
