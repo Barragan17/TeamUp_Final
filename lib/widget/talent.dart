@@ -4,7 +4,6 @@ import 'package:teamup_final/database/sign_in_auth.dart';
 import 'package:teamup_final/main.dart';
 import 'package:teamup_final/screen/talent_profile.dart';
 import 'package:teamup_final/screen/talent_search.dart';
-import 'package:teamup_final/widget/test.dart';
 
 class Talent extends StatefulWidget {
   @override
