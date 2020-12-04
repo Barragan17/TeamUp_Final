@@ -3,20 +3,22 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/screenutil.dart';
 
-class ProfileCard extends StatefulWidget {
+class ProjectCard extends StatefulWidget {
   final String name;
   final String imageUrl;
-  final int age;
+  final String date;
+  final String description;
+  final String tags;
   final String skills;
 
-  ProfileCard(@required this.name, @required this.imageUrl, @required this.age,
-      @required this.skills);
+  ProjectCard(@required this.name, @required this.imageUrl, @required this.date,
+      @required this.description, @required this.tags, @required this.skills);
 
   @override
-  _ProfileCardState createState() => _ProfileCardState();
+  _ProjectCardState createState() => _ProjectCardState();
 }
 
-class _ProfileCardState extends State<ProfileCard> {
+class _ProjectCardState extends State<ProjectCard> {
   @override
   Widget build(BuildContext context) {
     // return StreamBuilder(
@@ -68,40 +70,34 @@ class _ProfileCardState extends State<ProfileCard> {
               mainAxisSize: MainAxisSize.min,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
-                new Row(
-                  mainAxisSize: MainAxisSize.min,
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: <Widget>[
-                    new Text(
-                      widget.name,
-                      style: new TextStyle(
-                          shadows: [
-                            new Shadow(
-                                color: Colors.black54,
-                                offset: new Offset(1.0, 2.0),
-                                blurRadius: 10.0)
-                          ],
-                          color: Colors.white,
-                          fontSize: ScreenUtil().setSp(95.0),
-                          fontWeight: FontWeight.w800),
-                    ),
-                    new SizedBox(
-                      width: ScreenUtil().setWidth(40.0),
-                    ),
-                    new Text(
-                      widget.age.toString(),
-                      style: new TextStyle(
-                          shadows: [
-                            new Shadow(
-                                color: Colors.black54,
-                                offset: new Offset(1.0, 2.0),
-                                blurRadius: 10.0)
-                          ],
-                          color: Colors.white,
-                          fontSize: ScreenUtil().setSp(70.0),
-                          fontWeight: FontWeight.w300),
-                    ),
-                  ],
+                new Text(
+                  widget.name,
+                  style: new TextStyle(
+                      shadows: [
+                        new Shadow(
+                            color: Colors.black54,
+                            offset: new Offset(1.0, 2.0),
+                            blurRadius: 10.0)
+                      ],
+                      color: Colors.white,
+                      fontSize: ScreenUtil().setSp(95.0),
+                      fontWeight: FontWeight.w800),
+                ),
+                new SizedBox(
+                  width: ScreenUtil().setWidth(40.0),
+                ),
+                new Text(
+                  widget.date,
+                  style: new TextStyle(
+                      shadows: [
+                        new Shadow(
+                            color: Colors.black54,
+                            offset: new Offset(1.0, 2.0),
+                            blurRadius: 10.0)
+                      ],
+                      color: Colors.white,
+                      fontSize: ScreenUtil().setSp(70.0),
+                      fontWeight: FontWeight.w300),
                 ),
                 new SizedBox(
                   height: ScreenUtil().setHeight(10.0),
